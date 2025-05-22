@@ -1,0 +1,39 @@
+spring.application.name=E-commerce_Application
+
+server.port=8082
+
+# === DataSource Config ===
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.username=sa
+spring.datasource.password=
+
+#Swagger API
+springdoc.swagger-ui.path=/swagger-ui-custom.html
+
+openai.api.key=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
+
+# === Hibernate / JPA Config ===
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+# === Logging for SQL and Params ===
+logging.level.org.hibernate.SQL=DEBUG
+logging.level.org.hibernate.type.descriptor.sql=TRACE
+
+cohere.api.key=pR7JYSEE49DIbDnFFCmZXwD4zbhEapi7ztHfRJlQ
+
+# === Lazy Loading Support ===
+spring.jpa.properties.hibernate.enable_lazy_load_no_trans=true
+spring.jpa.open-in-view=true
+
+# === SQL Data Initialization ===
+spring.jpa.defer-datasource-initialization=true
+spring.datasource.initialization-mode=always
+spring.sql.init.mode=always
+
+# === H2 Console ===
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
